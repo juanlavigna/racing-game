@@ -8,7 +8,7 @@ let recorridoAzul = 0
 
 window.addEventListener("keyup", function(e){
     if(e.key === "r"){
-        recorridoRojo = recorridoRojo + 2
+        recorridoRojo = recorridoRojo + 9
         autoRojo.style.marginLeft = `${recorridoRojo}px`
         // console.log(recorridoRojo)
         if(recorridoRojo + 137 >= anchoPista){
@@ -19,8 +19,8 @@ window.addEventListener("keyup", function(e){
 })
 
 window.addEventListener("keyup", function(e){
-    if(e.key === "b"){
-        recorridoAzul = recorridoAzul + 2
+    if(e.key === "a"){
+        recorridoAzul = recorridoAzul + 9  
         autoAzul.style.marginLeft = `${recorridoAzul}px`
         // console.log(recorridoRojo)
         if(recorridoAzul + 137 >= anchoPista){
