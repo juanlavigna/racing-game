@@ -1,0 +1,13 @@
+.asfalto{
+    display: flex;
+    background-color: grey;
+    border: 1px solid black;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+.finish{
+    color: red;
+    text-align: right;
+    
+}
