@@ -8,16 +8,26 @@ let recorridoAzul = 0
 
 window.addEventListener("keyup", function(e){
     if(e.key === "r"){
-        recorridoRojo ++
+        recorridoRojo = recorridoRojo + 2
         autoRojo.style.marginLeft = `${recorridoRojo}px`
         // console.log(recorridoRojo)
+        if(recorridoRojo + 137 >= anchoPista){
+            document.body.style.backgroundColor = "red";
+            alert("Gano el rojo!")
+        }
     }
 })
 
 window.addEventListener("keyup", function(e){
     if(e.key === "b"){
-        recorridoAzul ++
+        recorridoAzul = recorridoAzul + 2
         autoAzul.style.marginLeft = `${recorridoAzul}px`
         // console.log(recorridoRojo)
+        if(recorridoAzul + 137 >= anchoPista){
+            document.body.style.backgroundColor = "blue";
+            alert("Gano el azul!") 
+        }
     }
 })
+
+
